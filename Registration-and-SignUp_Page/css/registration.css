@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font: 1rem 'Nunito', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(102, 51, 153, 0.4), rgba(102, 51, 153, 0.4)), url('/images/background-2.webp');
+    background-position: center;
+    background-size: cover;
+}
+
+.form-container {
+    max-width: 700px;
+    width: 100%;
+    padding: 2rem 2.5rem 2.5rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+
+.form-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+form .main-user-info {
+    border: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 1.2rem;
+}
+
+form .user-input-box {
+    width: 46%;   
+}
+
+form .user-input-box label {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+form .user-input-box input {
+    width: 100%;
+    margin: 0.3rem 0 0.7rem 0;
+    font-size: 1rem;
+    height: 45px;
+    padding-left: .8rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #f1f3f2;
+    color: 717171;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+form input[type=color] {
+    padding-left: unset;
+}
+
+.user-gender-details-box {
+    border: none;
+    padding: 0 ;
+}
+
+.user-gender-details-box .gender-title {
+    font-size: 1.2rem;
+    font-weight: 600px;
+    padding-bottom: 0.5rem;
+    color: #fff;
+}
+
+.user-gender-details-box .gender-category {
+    white-space: nowrap;
+}
+
+.user-gender-details-box .gender-category label {
+    margin-right: 1.5rem;
+    color: #fff;
+}
+
+.user-gender-details-box .gender-category input,
+.user-gender-details-box .gender-category label,
+.user-gender-details-box button.btn {
+    cursor: pointer;
+}
+
+.user-gender-details-box .gender-category input[type='radio'] { 
+    transform: scale(1.3);
+    margin-right: 0.5rem;
+}
+
+form .btn {
+    margin-top: 2rem;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    background: rgba(56, 204, 93, 0.7);
+    color: #fff;
+    transition: all 0.5s ease;
+}
+form button.btn:hover {
+    background-color: rgba(56, 204, 93, 0.9);
+    color: #fff;
+}
+
+@media (max-width: 600px) {
+    .form-container {
+        width: clamp(280px, 90vw, 700px);
+        padding: 2.5rem 1.5rem;
+    }
+
+    form .main-user-info {
+        max-height: 320px;
+        overflow: auto;
+    }
+
+    form .main-user-info::-webkit-scrollbar {
+        width: 0;
+    }
+
+    form .user-input-box {
+        width: 100%;   
+        margin-bottom: 0.4rem;
+    }
+    .form-title {
+        font-size: 1.85rem;
+    }
+    .user-gender-details-box .gender-category input[type='radio'][type='radio'] {
+        margin-right: unset;
+    }
+   
+    .user-gender-details-box  label {
+        margin-right: 1rem;
+    }
+}
