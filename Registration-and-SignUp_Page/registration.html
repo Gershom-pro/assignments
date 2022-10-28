@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gershom Joel">
+    <meta name="description" content="This is a Registration page">
+    <title>Registration Page</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/registration.css">
+</head>
+<body>
+    <article class="form-container">
+        <h1 class="form-title">Registration Form</h1>
+        <form action="https://httpbin.org/post" method="post" id="registration-form">
+            <fieldset class="main-user-info">
+                <div class="user-input-box">
+                    <label for="firstName">First Name 
+                        <input type="text" name="firstName" id="firstName" placeholder="Enter your first name" required>
+                    </label>
+                </div>
+                <div class="user-input-box">
+                    <label for="lastName">Last Name 
+                        <input type="text" name="lastName" id="lastName" placeholder="Enter your last name" required>
+                    </label>
+                </div>
+                <div class="user-input-box">
+                    <label for="email">Email   
+                        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                    </label>
+                </div>
+                <div class="user-input-box">
+                    <label for="phone">Phone Number 
+                        <input type="tel" name="phone" id="phone" placeholder="Enter Phone number" pattern="[0-9+]{10,}" maxlength="14" required>
+                    </label>
+                </div>
+                <div class="user-input-box">
+                    <label for="date-of-birth">Date of Birth 
+                        <input type="date" name="date-of-birth" id="date-of-birth" min="1982-01-01" max="2017-12-31" required>
+                    </label>
+                </div>
+                <div class="user-input-box">
+                    <label for="color">Favorite Color 
+                        <input type="color" name="color" id="color" required>
+                    </label>
+                </div>
+            </fieldset> 
+            <fieldset class="user-gender-details-box">
+                <legend class="gender-title">Gender</legend>
+                <div class="gender-category">
+                    <input type="radio" name="gender" id="male" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="female" value="female" required>
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="other" value="other" required>
+                    <label for="other">Other</label>
+                </div>
+            </fieldset>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </article>
+</body>
+</html>
