@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gershom Joel">
+    <meta name="description" content="In this portfolio site, I am showcasing what I've learnt so far in HTML and CSS">
+    <title>My Portfolio Site</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>    
+    <header id="header">
+        <label class="logo">Gershom</label>
+        <nav>
+            <ul>
+                <li><a href="#hero" class="active">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul> 
+            <a href="#contact" class="hire-btn">Hire Me</a>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="section-wrapper" id="hero">
+            <article class="hero-details">
+                <h1>Gershom Joel</h1>
+                <p class="section-subtitle subtitle-style">
+                    Introduction
+                </p>
+                <p>
+                    Hello 👋
+                </p>
+                <p>
+                    Frontend Developer and WordPress Expert
+                </p>
+                <p>
+                    Skilled in creating and implementing simple, attractive, responsive and user-friendly web layout
+                </p>
+                <a href="#portfolio" class="btn">See Portfolio ></a>
+            </article>
+            <figure class="hero-image-wrapper image-wrapper">
+                <img src="images/GershomJ.png" alt="Gershom" width="1100" height="1100" title="Gershom">
+                <figcaption class="hide-caption">Hero Image</figcaption>
+            </figure>
+        </section>
+        <section class="experience-section">
+            <div>
+                <h2>15+</h2>
+                <p>Projects Done</p>
+            </div>
+            <div>
+                <h2>2+</h2>
+                <p>Years of Experience</p>
+            </div>
+            <div>
+                <h2>10+</h2>
+                <p>Happy Clients</p>
+            </div>
+        </section>
+        <hr>
+        <section class="section-wrapper" id="services">
+            <h2 class="section-title">What I Do</h2>
+            <p class="section-subtitle"> My 
+                <span class="subtitle-style">Services</span>
+            </p>
+            <article class="services-details">
+                <section class="card">
+                    <h2 class="card-title">Website Design</h2>
+                    <p>
+                        I design aesthetically pleasing and well-structured web layouts
+                    </p>
+                </section>
+                <section class="card">
+                    <h2  class="card-title">WordPress Development</h2>
+                    <p>
+                        I develop and manage responsive WordPress websites
+                    </p>
+                </section>
+                <section class="card">
+                    <h2  class="card-title">Site Optimization</h2>
+                    <p>
+                        I optimize sites for speed and ranking on Google search for business growth
+                    </p>
+                </section>
+            </article>
+            <a href="#contact" class="btn">Hire Me Now ></a>
+        </section>
+        <hr>
+        <section class="section-wrapper" id="portfolio">
+            <h2 class="section-title">My Portfolio</h2>
+            <p class="section-subtitle"> Completed 
+                <span class="subtitle-style">Projects</span>
+            </p>
+            <article class="portfolio-details">
+                <figure class="image-wrapper portfolio-image-wrapper burga">
+                    <p class="portfolio-hover-text">
+                        Burga.com
+                    </p>
+                    <figcaption class="hide-caption">portfolio-sample-work</figcaption>
+                </figure>
+                <figure class="image-wrapper portfolio-image-wrapper slatebeautynyc">
+                    <p class="portfolio-hover-text">
+                        Slatebeautynyc.com
+                    </p>
+                    <figcaption class="hide-caption">portfolio-sample-work</figcaption>
+                </figure>
+                <figure class="image-wrapper portfolio-image-wrapper cookalla">
+                    <p class="portfolio-hover-text">
+                        Cookalla.com
+                    </p>
+                    <figcaption class="hide-caption">portfolio-sample-work</figcaption>
+                </figure>
+            </article>
+            <a href="portfolio.html" class="btn">View All Works ></a>
+        </section>
+        <hr>
+        <section class="section-wrapper" id="about">
+            <article class="about-details">
+                <h2 class="section-title">Who I Am</h2>
+                <p class="section-subtitle">About 
+                    <span class="subtitle-style">Me</span>
+                </p>
+                <!-- first about section image -->
+                <figure class="about-image-wrapper1 image-wrapper"> 
+                    <img src="images/GershomJoe.png" alt="Gershom" width="480" height="480" title="Gershom">
+                    <figcaption class="role-caption">Gershom <small class="role">Frontend Developer and Web 3.0 enthusiast</small></figcaption>
+                </figure>
+                <p>
+                    I assist individuals, startups and established companies to set up their  brands online. As an expert developer, I'm well-versed with development and designing for both web and mobile.
+                </p>
+                <a href="about.html" class="btn">Continue Reading ></a>
+            </article>
+
+            <!-- Due to how I like to position the about section image on desktop and mobile, I duplicated the image and hid one on mobile and the other on Desktop view while displaying one at a time -->
+            <figure class="about-image-wrapper2 image-wrapper"> 
+                <img src="images/GershomJoe.png" alt="Gershom" width="480" height="480" title="Gershom">
+                <figcaption class="role-caption">Gershom <small class="role">Frontend Developer and Web 3.0 enthusiast</small></figcaption>
+            </figure>
+        </section>
+        <hr>
+        <section class="section-wrapper" id="contact">
+            <h2 class="section-title">Let's Create</h2>
+            <p class="section-subtitle"> Contact 
+                <span class="subtitle-style">Me</span>
+            </p>
+            <p>Feel free to reach out to me on your projects via any of my contact or message me directly via the form  below</p>
+            <section class="contact-container">
+                <section class="contact-details">
+                    <a href="#">
+                        <figure class="contact-card image-wrapper card">
+                            <div class="social-icon-wrapper">
+                                <img src="images/Email_logo.png" alt="social-icon" width="512" height="512" title="social-icon">
+                            </div>
+                            <figcaption class="socials-caption">Email</figcaption>
+                        </figure>
+                    </a> 
+                    <a href="#">
+                        <figure class="contact-card image-wrapper card">
+                            <div class="social-icon-wrapper">
+                                <img src="images/Linkedin.png" alt="social-icon" width="251" height="158" title="social-icon">
+                            </div>
+                            <figcaption class="socials-caption">LinkedIn</figcaption>
+                        </figure>
+                    </a> 
+                    <a href="#">
+                        <figure class="contact-card image-wrapper card">
+                            <div class="social-icon-wrapper">
+                                <img src="images/upwork_icon.png" alt="Upwork" width="512" height="512" title="Upwork">
+                            </div>
+                            <figcaption class="socials-caption">Upwork</figcaption>
+                        </figure>
+                    </a> 
+                </section>
+                <form action="form-submit.html" id="form">
+                    <div class="name-input-wrapper">
+                        <div class="user-input name-wrapper-size">
+                            <label for="firstName">First Name</label>
+                            <input type="text" name="firstName" id="firtName" placeholder="Enter First name">
+                        </div>
+                        <div class="user-input name-wrapper-size">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" name="lastName" id="lastName" placeholder="Enter Last name">
+                        </div>
+                    </div>
+                    <div class="user-input message-wrapper-size">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Enter Email">
+                    </div>
+                    <div class="user-input message-wrapper-size">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Type message here..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Message me</button>
+                </form>
+            </section>
+        </section>
+    </main>
+    <hr>
+    <footer id="footer">
+        <p>Copyright &copy; 2022 All Rights Reserved</p>
+    </footer>
+</body>
+</html>
